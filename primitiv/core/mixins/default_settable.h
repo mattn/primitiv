@@ -64,8 +64,10 @@ public:
   }
 };
 
+#ifdef _PRIMITIV_DEFAULT_SETTABLE_INSTANTIATE
 template<typename T>
 T *DefaultSettable<T>::default_obj_ = nullptr;
+#endif
 
 }  // namespace mixins
 }  // namespace primitiv
